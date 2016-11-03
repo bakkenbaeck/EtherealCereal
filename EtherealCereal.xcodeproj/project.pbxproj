@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F800C0C1DCB34D700C37B7A /* EtherealCereal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; };
+		9F800C111DCB34D700C37B7A /* EtherealCerealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F800C101DCB34D700C37B7A /* EtherealCerealTests.swift */; };
+		9F800C131DCB34D700C37B7A /* EtherealCereal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F800C051DCB34D700C37B7A /* EtherealCereal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FD9AE301DCB364A00828D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE2F1DCB364A00828D06 /* AppDelegate.swift */; };
+		9FD9AE321DCB364A00828D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE311DCB364A00828D06 /* ViewController.swift */; };
+		9FD9AE371DCB364A00828D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE361DCB364A00828D06 /* Assets.xcassets */; };
+		9FD9AE3A1DCB364A00828D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE381DCB364A00828D06 /* LaunchScreen.storyboard */; };
+		9FD9AE3F1DCB36AE00828D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE311DCB364A00828D06 /* ViewController.swift */; };
+		9FD9AE411DCB36C600828D06 /* EtherealCereal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */; };
+		9FD9AE421DCB36C600828D06 /* EtherealCereal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */; };
+		9FD9AE431DCB36C600828D06 /* EtherealCereal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */; };
+		9FD9AE451DCB36F900828D06 /* EtherealCereal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; };
+		9FD9AE461DCB36FA00828D06 /* EtherealCereal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FD9AE4D1DCB383400828D06 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD9AE491DCB383400828D06 /* CommonCrypto.framework */; };
+		9FD9AE4E1DCB383400828D06 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD9AE491DCB383400828D06 /* CommonCrypto.framework */; };
+		9FD9AE4F1DCB383400828D06 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD9AE491DCB383400828D06 /* CommonCrypto.framework */; };
+		9FD9AE501DCB383400828D06 /* CommonCrypto.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE4A1DCB383400828D06 /* CommonCrypto.framework.dSYM */; };
+		9FD9AE511DCB383400828D06 /* CommonCrypto.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE4A1DCB383400828D06 /* CommonCrypto.framework.dSYM */; };
+		9FD9AE521DCB383400828D06 /* CommonCrypto.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE4A1DCB383400828D06 /* CommonCrypto.framework.dSYM */; };
+		9FD9AE531DCB383400828D06 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD9AE4B1DCB383400828D06 /* Crypto.framework */; };
+		9FD9AE541DCB383400828D06 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD9AE4B1DCB383400828D06 /* Crypto.framework */; };
+		9FD9AE551DCB383400828D06 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD9AE4B1DCB383400828D06 /* Crypto.framework */; };
+		9FD9AE561DCB383400828D06 /* Crypto.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE4C1DCB383400828D06 /* Crypto.framework.dSYM */; };
+		9FD9AE571DCB383400828D06 /* Crypto.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE4C1DCB383400828D06 /* Crypto.framework.dSYM */; };
+		9FD9AE581DCB383400828D06 /* Crypto.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE4C1DCB383400828D06 /* Crypto.framework.dSYM */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F800C0D1DCB34D700C37B7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F800BF91DCB34D700C37B7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F800C011DCB34D700C37B7A;
+			remoteInfo = EtherealCereal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9FD9AE441DCB36E900828D06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FD9AE461DCB36FA00828D06 /* EtherealCereal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9F800C021DCB34D700C37B7A /* EtherealCereal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EtherealCereal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F800C051DCB34D700C37B7A /* EtherealCereal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtherealCereal.h; sourceTree = "<group>"; };
+		9F800C061DCB34D700C37B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F800C0B1DCB34D700C37B7A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F800C101DCB34D700C37B7A /* EtherealCerealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherealCerealTests.swift; sourceTree = "<group>"; };
+		9F800C121DCB34D700C37B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD9AE2D1DCB364A00828D06 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD9AE2F1DCB364A00828D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FD9AE311DCB364A00828D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FD9AE361DCB364A00828D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FD9AE391DCB364A00828D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FD9AE3B1DCB364A00828D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherealCereal.swift; sourceTree = "<group>"; };
+		9FD9AE491DCB383400828D06 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
+		9FD9AE4A1DCB383400828D06 /* CommonCrypto.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = CommonCrypto.framework.dSYM; path = Carthage/Build/iOS/CommonCrypto.framework.dSYM; sourceTree = "<group>"; };
+		9FD9AE4B1DCB383400828D06 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
+		9FD9AE4C1DCB383400828D06 /* Crypto.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Crypto.framework.dSYM; path = Carthage/Build/iOS/Crypto.framework.dSYM; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F800BFE1DCB34D700C37B7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE4D1DCB383400828D06 /* CommonCrypto.framework in Frameworks */,
+				9FD9AE531DCB383400828D06 /* Crypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F800C081DCB34D700C37B7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE541DCB383400828D06 /* Crypto.framework in Frameworks */,
+				9FD9AE4E1DCB383400828D06 /* CommonCrypto.framework in Frameworks */,
+				9F800C0C1DCB34D700C37B7A /* EtherealCereal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD9AE2A1DCB364A00828D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE551DCB383400828D06 /* Crypto.framework in Frameworks */,
+				9FD9AE4F1DCB383400828D06 /* CommonCrypto.framework in Frameworks */,
+				9FD9AE451DCB36F900828D06 /* EtherealCereal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F800BF81DCB34D700C37B7A = {
+			isa = PBXGroup;
+			children = (
+				9FD9AE481DCB382A00828D06 /* Vendor */,
+				9F800C041DCB34D700C37B7A /* EtherealCereal */,
+				9F800C0F1DCB34D700C37B7A /* Tests */,
+				9FD9AE2E1DCB364A00828D06 /* Demo */,
+				9F800C031DCB34D700C37B7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F800C031DCB34D700C37B7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F800C021DCB34D700C37B7A /* EtherealCereal.framework */,
+				9F800C0B1DCB34D700C37B7A /* Tests.xctest */,
+				9FD9AE2D1DCB364A00828D06 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F800C041DCB34D700C37B7A /* EtherealCereal */ = {
+			isa = PBXGroup;
+			children = (
+				9FD9AE471DCB37C100828D06 /* Resources */,
+				9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */,
+			);
+			path = EtherealCereal;
+			sourceTree = "<group>";
+		};
+		9F800C0F1DCB34D700C37B7A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9F800C101DCB34D700C37B7A /* EtherealCerealTests.swift */,
+				9F800C121DCB34D700C37B7A /* Info.plist */,
+			);
+			name = Tests;
+			path = EtherealCerealTests;
+			sourceTree = "<group>";
+		};
+		9FD9AE2E1DCB364A00828D06 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				9FD9AE2F1DCB364A00828D06 /* AppDelegate.swift */,
+				9FD9AE311DCB364A00828D06 /* ViewController.swift */,
+				9FD9AE361DCB364A00828D06 /* Assets.xcassets */,
+				9FD9AE381DCB364A00828D06 /* LaunchScreen.storyboard */,
+				9FD9AE3B1DCB364A00828D06 /* Info.plist */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		9FD9AE471DCB37C100828D06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F800C051DCB34D700C37B7A /* EtherealCereal.h */,
+				9F800C061DCB34D700C37B7A /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9FD9AE481DCB382A00828D06 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9FD9AE491DCB383400828D06 /* CommonCrypto.framework */,
+				9FD9AE4A1DCB383400828D06 /* CommonCrypto.framework.dSYM */,
+				9FD9AE4B1DCB383400828D06 /* Crypto.framework */,
+				9FD9AE4C1DCB383400828D06 /* Crypto.framework.dSYM */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9F800BFF1DCB34D700C37B7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F800C131DCB34D700C37B7A /* EtherealCereal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9F800C011DCB34D700C37B7A /* Framework-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F800C161DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "Framework-iOS" */;
+			buildPhases = (
+				9F800BFD1DCB34D700C37B7A /* Sources */,
+				9F800BFE1DCB34D700C37B7A /* Frameworks */,
+				9F800BFF1DCB34D700C37B7A /* Headers */,
+				9F800C001DCB34D700C37B7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Framework-iOS";
+			productName = EtherealCereal;
+			productReference = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F800C0A1DCB34D700C37B7A /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F800C191DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				9F800C071DCB34D700C37B7A /* Sources */,
+				9F800C081DCB34D700C37B7A /* Frameworks */,
+				9F800C091DCB34D700C37B7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F800C0E1DCB34D700C37B7A /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = EtherealCerealTests;
+			productReference = 9F800C0B1DCB34D700C37B7A /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FD9AE2C1DCB364A00828D06 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD9AE3E1DCB364A00828D06 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				9FD9AE291DCB364A00828D06 /* Sources */,
+				9FD9AE2A1DCB364A00828D06 /* Frameworks */,
+				9FD9AE2B1DCB364A00828D06 /* Resources */,
+				9FD9AE441DCB36E900828D06 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = 9FD9AE2D1DCB364A00828D06 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F800BF91DCB34D700C37B7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Bakken & Bæck";
+				TargetAttributes = {
+					9F800C011DCB34D700C37B7A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+					};
+					9F800C0A1DCB34D700C37B7A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+					};
+					9FD9AE2C1DCB364A00828D06 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9F800BFC1DCB34D700C37B7A /* Build configuration list for PBXProject "EtherealCereal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F800BF81DCB34D700C37B7A;
+			productRefGroup = 9F800C031DCB34D700C37B7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F800C011DCB34D700C37B7A /* Framework-iOS */,
+				9F800C0A1DCB34D700C37B7A /* Tests */,
+				9FD9AE2C1DCB364A00828D06 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F800C001DCB34D700C37B7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE501DCB383400828D06 /* CommonCrypto.framework.dSYM in Resources */,
+				9FD9AE561DCB383400828D06 /* Crypto.framework.dSYM in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F800C091DCB34D700C37B7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE511DCB383400828D06 /* CommonCrypto.framework.dSYM in Resources */,
+				9FD9AE571DCB383400828D06 /* Crypto.framework.dSYM in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD9AE2B1DCB364A00828D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE521DCB383400828D06 /* CommonCrypto.framework.dSYM in Resources */,
+				9FD9AE581DCB383400828D06 /* Crypto.framework.dSYM in Resources */,
+				9FD9AE3A1DCB364A00828D06 /* LaunchScreen.storyboard in Resources */,
+				9FD9AE371DCB364A00828D06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F800BFD1DCB34D700C37B7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE3F1DCB36AE00828D06 /* ViewController.swift in Sources */,
+				9FD9AE411DCB36C600828D06 /* EtherealCereal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F800C071DCB34D700C37B7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F800C111DCB34D700C37B7A /* EtherealCerealTests.swift in Sources */,
+				9FD9AE421DCB36C600828D06 /* EtherealCereal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD9AE291DCB364A00828D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD9AE321DCB364A00828D06 /* ViewController.swift in Sources */,
+				9FD9AE431DCB36C600828D06 /* EtherealCereal.swift in Sources */,
+				9FD9AE301DCB364A00828D06 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F800C0E1DCB34D700C37B7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F800C011DCB34D700C37B7A /* Framework-iOS */;
+			targetProxy = 9F800C0D1DCB34D700C37B7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FD9AE381DCB364A00828D06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD9AE391DCB364A00828D06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F800C141DCB34D700C37B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F800C151DCB34D700C37B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F800C171DCB34D700C37B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = EtherealCereal/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.EtherealCereal;
+				PRODUCT_NAME = EtherealCereal;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9F800C181DCB34D700C37B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = EtherealCereal/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.EtherealCereal;
+				PRODUCT_NAME = EtherealCereal;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9F800C1A1DCB34D700C37B7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = EtherealCerealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.EtherealCerealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9F800C1B1DCB34D700C37B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = EtherealCerealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.EtherealCerealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9FD9AE3C1DCB364A00828D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9FD9AE3D1DCB364A00828D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F800BFC1DCB34D700C37B7A /* Build configuration list for PBXProject "EtherealCereal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F800C141DCB34D700C37B7A /* Debug */,
+				9F800C151DCB34D700C37B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F800C161DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "Framework-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F800C171DCB34D700C37B7A /* Debug */,
+				9F800C181DCB34D700C37B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F800C191DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F800C1A1DCB34D700C37B7A /* Debug */,
+				9F800C1B1DCB34D700C37B7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD9AE3E1DCB364A00828D06 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD9AE3C1DCB364A00828D06 /* Debug */,
+				9FD9AE3D1DCB364A00828D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F800BF91DCB34D700C37B7A /* Project object */;
+}
