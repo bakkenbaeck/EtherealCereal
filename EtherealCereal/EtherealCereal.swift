@@ -5,11 +5,11 @@ import EtherealCereal.EtherWrapper
 public class EtherealCereal: NSObject {
 
     public lazy var publicKey: String = {
-        return self.publicKeyData.asHexadecimalString()
+        return self.publicKeyData.hexadecimalString
     }()
 
     public var privateKey: String {
-        return self.privateKeyData.asHexadecimalString()
+        return self.privateKeyData.hexadecimalString
     }
 
     public lazy var publicKeyData: Data = {
@@ -81,18 +81,18 @@ public class EtherealCereal: NSObject {
 
     public convenience init(privateKey: String) {
         self.init()
-        self._privateKeyData = privateKey.asHexadecimalData()!
+        self._privateKeyData = privateKey.hexadecimalData!
     }
 }
 
-extension Data {
-    func asHexadecimalString() -> String {
+public extension Data {
+    public var hexadecimalString: String {
         return (self as NSData).hexadecimalString()
     }
 }
 
-extension String {
-    func asHexadecimalData() -> Data? {
+public extension String {
+    public var hexadecimalData: Data? {
         let utf16 = self.utf16
         guard let data = NSMutableData(capacity: utf16.count/2) else { return nil }
 
