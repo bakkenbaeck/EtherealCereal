@@ -75,7 +75,6 @@ public class EtherealCereal: NSObject {
 
     public func sign(message: String) -> String {
         let messageData = message.data(using: .utf8)!
-        
         return self.ether.sign(message: messageData, with: self.privateKeyData)
     }
 

@@ -9,7 +9,7 @@
     NSData *fullAddress = [publicKey sha3:256];
     NSData *address = [fullAddress subdataWithRange:NSMakeRange(12, fullAddress.length - 12)];
 
-    return [address hexadecimalString];
+    return [@"0x" stringByAppendingString:[address hexadecimalString]];
 }
 
 -  (NSData * _Nonnull)generatePublicKeyFromPrivateKey:(NSData * _Nonnull)privateKey {

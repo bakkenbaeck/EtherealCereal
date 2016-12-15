@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		9F6D5D2A1DCB71070063087D /* EtherWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2FF9D41DCB6865001CF067 /* EtherWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6D5D2B1DCB71090063087D /* EtherWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FF9D51DCB6865001CF067 /* EtherWrapper.m */; };
+		9F7FC6AA1DF80B990074164B /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F7FC6A91DF80B990074164B /* secp256k1.c */; };
+		9F7FC6B01DF80BC30074164B /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7FC6AD1DF80BC30074164B /* secp256k1.h */; };
+		9F7FC6B11DF80BC30074164B /* secp256k1_ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7FC6AE1DF80BC30074164B /* secp256k1_ecdh.h */; };
+		9F7FC6B21DF80BC30074164B /* secp256k1_recovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7FC6AF1DF80BC30074164B /* secp256k1_recovery.h */; };
 		9F800C131DCB34D700C37B7A /* EtherealCereal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F800C051DCB34D700C37B7A /* EtherealCereal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F9030AA1DD0854F0099861E /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F9030A81DD0854F0099861E /* keccak.c */; };
 		9F9030B41DD0928A0099861E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9030B31DD0928A0099861E /* Tests.swift */; };
 		9F9030B61DD0928A0099861E /* EtherealCereal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; };
 		9F9030C31DD095250099861E /* keccak.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9030A91DD0854F0099861E /* keccak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F9030C81DD0956A0099861E /* EtherealCereal.framework in Resources */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; };
-		9F9030D51DD0BED10099861E /* Ether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9030D41DD0BED10099861E /* Ether.framework */; };
-		9F9030D61DD0BED10099861E /* Ether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9030D41DD0BED10099861E /* Ether.framework */; };
-		9F9030D71DD0BED10099861E /* Ether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F9030D41DD0BED10099861E /* Ether.framework */; };
 		9FD9AE301DCB364A00828D06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE2F1DCB364A00828D06 /* AppDelegate.swift */; };
 		9FD9AE321DCB364A00828D06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE311DCB364A00828D06 /* ViewController.swift */; };
 		9FD9AE371DCB364A00828D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD9AE361DCB364A00828D06 /* Assets.xcassets */; };
@@ -26,6 +27,32 @@
 		9FD9AE431DCB36C600828D06 /* EtherealCereal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */; };
 		9FD9AE451DCB36F900828D06 /* EtherealCereal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; };
 		9FD9AE461DCB36FA00828D06 /* EtherealCereal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FFB39CD1DF80F4A00274660 /* libsecp256k1-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39C61DF80D1700274660 /* libsecp256k1-config.h */; };
+		9FFB39D71DF8133F00274660 /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39D61DF8133F00274660 /* field_impl.h */; };
+		9FFB39DB1DF8137100274660 /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39D91DF8137100274660 /* field_10x26_impl.h */; };
+		9FFB39DD1DF8138200274660 /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39DC1DF8138200274660 /* num.h */; };
+		9FFB39DF1DF8138F00274660 /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39DE1DF8138F00274660 /* field.h */; };
+		9FFB39E11DF813A400274660 /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39E01DF813A400274660 /* field_10x26.h */; };
+		9FFB39E31DF813E500274660 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39E21DF813E500274660 /* util.h */; };
+		9FFB39E61DF813F900274660 /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39E41DF813F900274660 /* scalar_impl.h */; };
+		9FFB39E71DF813F900274660 /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39E51DF813F900274660 /* scalar.h */; };
+		9FFB39EA1DF8140500274660 /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39E81DF8140500274660 /* group_impl.h */; };
+		9FFB39EB1DF8140500274660 /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39E91DF8140500274660 /* group.h */; };
+		9FFB39EE1DF8141800274660 /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39EC1DF8141800274660 /* scalar_8x32_impl.h */; };
+		9FFB39EF1DF8141800274660 /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39ED1DF8141800274660 /* scalar_8x32.h */; };
+		9FFB39F61DF8144200274660 /* ecmult_const_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39F01DF8144200274660 /* ecmult_const_impl.h */; };
+		9FFB39F71DF8144200274660 /* ecmult_const.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39F11DF8144200274660 /* ecmult_const.h */; };
+		9FFB39F81DF8144200274660 /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39F21DF8144200274660 /* ecmult_gen_impl.h */; };
+		9FFB39F91DF8144200274660 /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39F31DF8144200274660 /* ecmult_gen.h */; };
+		9FFB39FA1DF8144200274660 /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39F41DF8144200274660 /* ecmult_impl.h */; };
+		9FFB39FB1DF8144200274660 /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39F51DF8144200274660 /* ecmult.h */; };
+		9FFB39FE1DF8145900274660 /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39FC1DF8145900274660 /* hash_impl.h */; };
+		9FFB39FF1DF8145900274660 /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB39FD1DF8145900274660 /* hash.h */; };
+		9FFB3A021DF8146500274660 /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB3A001DF8146500274660 /* ecdsa_impl.h */; };
+		9FFB3A031DF8146500274660 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB3A011DF8146500274660 /* ecdsa.h */; };
+		9FFB3A061DF8146F00274660 /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB3A041DF8146F00274660 /* eckey_impl.h */; };
+		9FFB3A071DF8146F00274660 /* eckey.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB3A051DF8146F00274660 /* eckey.h */; };
+		9FFB3A1A1DF8148600274660 /* main_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FFB3A0E1DF8148600274660 /* main_impl.h */; };
 		9FFB632C1DCB3ABF0095D5CA /* EtherealCereal.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,6 +83,10 @@
 /* Begin PBXFileReference section */
 		9F2FF9D41DCB6865001CF067 /* EtherWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EtherWrapper.h; sourceTree = "<group>"; };
 		9F2FF9D51DCB6865001CF067 /* EtherWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EtherWrapper.m; sourceTree = "<group>"; };
+		9F7FC6A91DF80B990074164B /* secp256k1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		9F7FC6AD1DF80BC30074164B /* secp256k1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		9F7FC6AE1DF80BC30074164B /* secp256k1_ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_ecdh.h; sourceTree = "<group>"; };
+		9F7FC6AF1DF80BC30074164B /* secp256k1_recovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secp256k1_recovery.h; sourceTree = "<group>"; };
 		9F800C021DCB34D700C37B7A /* EtherealCereal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EtherealCereal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F800C051DCB34D700C37B7A /* EtherealCereal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EtherealCereal.h; sourceTree = "<group>"; };
 		9F800C061DCB34D700C37B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +95,6 @@
 		9F9030B11DD0928A0099861E /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9030B31DD0928A0099861E /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9F9030B51DD0928A0099861E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F9030D41DD0BED10099861E /* Ether.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ether.framework; sourceTree = "<group>"; };
 		9FD9AE2D1DCB364A00828D06 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD9AE2F1DCB364A00828D06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD9AE311DCB364A00828D06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +102,32 @@
 		9FD9AE391DCB364A00828D06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD9AE3B1DCB364A00828D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FD9AE401DCB36C600828D06 /* EtherealCereal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherealCereal.swift; sourceTree = "<group>"; };
+		9FFB39C61DF80D1700274660 /* libsecp256k1-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libsecp256k1-config.h"; sourceTree = "<group>"; };
+		9FFB39D61DF8133F00274660 /* field_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_impl.h; sourceTree = "<group>"; };
+		9FFB39D91DF8137100274660 /* field_10x26_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26_impl.h; sourceTree = "<group>"; };
+		9FFB39DC1DF8138200274660 /* num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = num.h; sourceTree = "<group>"; };
+		9FFB39DE1DF8138F00274660 /* field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
+		9FFB39E01DF813A400274660 /* field_10x26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_10x26.h; sourceTree = "<group>"; };
+		9FFB39E21DF813E500274660 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		9FFB39E41DF813F900274660 /* scalar_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_impl.h; sourceTree = "<group>"; };
+		9FFB39E51DF813F900274660 /* scalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
+		9FFB39E81DF8140500274660 /* group_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_impl.h; sourceTree = "<group>"; };
+		9FFB39E91DF8140500274660 /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		9FFB39EC1DF8141800274660 /* scalar_8x32_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32_impl.h; sourceTree = "<group>"; };
+		9FFB39ED1DF8141800274660 /* scalar_8x32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scalar_8x32.h; sourceTree = "<group>"; };
+		9FFB39F01DF8144200274660 /* ecmult_const_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_const_impl.h; sourceTree = "<group>"; };
+		9FFB39F11DF8144200274660 /* ecmult_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_const.h; sourceTree = "<group>"; };
+		9FFB39F21DF8144200274660 /* ecmult_gen_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen_impl.h; sourceTree = "<group>"; };
+		9FFB39F31DF8144200274660 /* ecmult_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_gen.h; sourceTree = "<group>"; };
+		9FFB39F41DF8144200274660 /* ecmult_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult_impl.h; sourceTree = "<group>"; };
+		9FFB39F51DF8144200274660 /* ecmult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecmult.h; sourceTree = "<group>"; };
+		9FFB39FC1DF8145900274660 /* hash_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_impl.h; sourceTree = "<group>"; };
+		9FFB39FD1DF8145900274660 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		9FFB3A001DF8146500274660 /* ecdsa_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa_impl.h; sourceTree = "<group>"; };
+		9FFB3A011DF8146500274660 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		9FFB3A041DF8146F00274660 /* eckey_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey_impl.h; sourceTree = "<group>"; };
+		9FFB3A051DF8146F00274660 /* eckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eckey.h; sourceTree = "<group>"; };
+		9FFB3A0E1DF8148600274660 /* main_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_impl.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F9030D51DD0BED10099861E /* Ether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F9030B61DD0928A0099861E /* EtherealCereal.framework in Frameworks */,
-				9F9030D71DD0BED10099861E /* Ether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,13 +151,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD9AE451DCB36F900828D06 /* EtherealCereal.framework in Frameworks */,
-				9F9030D61DD0BED10099861E /* Ether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F7FC6AC1DF80BC30074164B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9F7FC6AD1DF80BC30074164B /* secp256k1.h */,
+				9F7FC6AE1DF80BC30074164B /* secp256k1_ecdh.h */,
+				9F7FC6AF1DF80BC30074164B /* secp256k1_recovery.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		9F800BF81DCB34D700C37B7A = {
 			isa = PBXGroup;
 			children = (
@@ -171,9 +234,52 @@
 			children = (
 				9F9030A81DD0854F0099861E /* keccak.c */,
 				9F9030A91DD0854F0099861E /* keccak.h */,
-				9F9030D41DD0BED10099861E /* Ether.framework */,
+				9FFB39C61DF80D1700274660 /* libsecp256k1-config.h */,
+				9FFB3A081DF8148600274660 /* modules */,
+				9F7FC6AC1DF80BC30074164B /* include */,
+				9F7FC6A91DF80B990074164B /* secp256k1.c */,
+				9FFB39E21DF813E500274660 /* util.h */,
+				9FFB39D61DF8133F00274660 /* field_impl.h */,
+				9FFB39D91DF8137100274660 /* field_10x26_impl.h */,
+				9FFB39E01DF813A400274660 /* field_10x26.h */,
+				9FFB39DC1DF8138200274660 /* num.h */,
+				9FFB39DE1DF8138F00274660 /* field.h */,
+				9FFB39E41DF813F900274660 /* scalar_impl.h */,
+				9FFB39E51DF813F900274660 /* scalar.h */,
+				9FFB39E81DF8140500274660 /* group_impl.h */,
+				9FFB39E91DF8140500274660 /* group.h */,
+				9FFB39EC1DF8141800274660 /* scalar_8x32_impl.h */,
+				9FFB39ED1DF8141800274660 /* scalar_8x32.h */,
+				9FFB39F01DF8144200274660 /* ecmult_const_impl.h */,
+				9FFB39F11DF8144200274660 /* ecmult_const.h */,
+				9FFB39F21DF8144200274660 /* ecmult_gen_impl.h */,
+				9FFB39F31DF8144200274660 /* ecmult_gen.h */,
+				9FFB39F41DF8144200274660 /* ecmult_impl.h */,
+				9FFB39F51DF8144200274660 /* ecmult.h */,
+				9FFB39FC1DF8145900274660 /* hash_impl.h */,
+				9FFB39FD1DF8145900274660 /* hash.h */,
+				9FFB3A001DF8146500274660 /* ecdsa_impl.h */,
+				9FFB3A011DF8146500274660 /* ecdsa.h */,
+				9FFB3A041DF8146F00274660 /* eckey_impl.h */,
+				9FFB3A051DF8146F00274660 /* eckey.h */,
 			);
 			name = Vendor;
+			sourceTree = "<group>";
+		};
+		9FFB3A081DF8148600274660 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				9FFB3A0D1DF8148600274660 /* recovery */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		9FFB3A0D1DF8148600274660 /* recovery */ = {
+			isa = PBXGroup;
+			children = (
+				9FFB3A0E1DF8148600274660 /* main_impl.h */,
+			);
+			path = recovery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +289,39 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFB39FB1DF8144200274660 /* ecmult.h in Headers */,
+				9FFB39EB1DF8140500274660 /* group.h in Headers */,
+				9FFB39DD1DF8138200274660 /* num.h in Headers */,
+				9F7FC6B21DF80BC30074164B /* secp256k1_recovery.h in Headers */,
+				9F7FC6B01DF80BC30074164B /* secp256k1.h in Headers */,
+				9FFB3A021DF8146500274660 /* ecdsa_impl.h in Headers */,
+				9FFB39FA1DF8144200274660 /* ecmult_impl.h in Headers */,
 				9F800C131DCB34D700C37B7A /* EtherealCereal.h in Headers */,
+				9FFB39EF1DF8141800274660 /* scalar_8x32.h in Headers */,
+				9FFB3A031DF8146500274660 /* ecdsa.h in Headers */,
+				9FFB3A061DF8146F00274660 /* eckey_impl.h in Headers */,
+				9FFB39E71DF813F900274660 /* scalar.h in Headers */,
+				9FFB39E11DF813A400274660 /* field_10x26.h in Headers */,
 				9F6D5D2A1DCB71070063087D /* EtherWrapper.h in Headers */,
+				9FFB3A071DF8146F00274660 /* eckey.h in Headers */,
+				9F7FC6B11DF80BC30074164B /* secp256k1_ecdh.h in Headers */,
+				9FFB39E61DF813F900274660 /* scalar_impl.h in Headers */,
+				9FFB3A1A1DF8148600274660 /* main_impl.h in Headers */,
+				9FFB39F81DF8144200274660 /* ecmult_gen_impl.h in Headers */,
+				9FFB39EE1DF8141800274660 /* scalar_8x32_impl.h in Headers */,
+				9FFB39F91DF8144200274660 /* ecmult_gen.h in Headers */,
+				9FFB39FF1DF8145900274660 /* hash.h in Headers */,
+				9FFB39F71DF8144200274660 /* ecmult_const.h in Headers */,
+				9FFB39DB1DF8137100274660 /* field_10x26_impl.h in Headers */,
+				9FFB39EA1DF8140500274660 /* group_impl.h in Headers */,
+				9FFB39CD1DF80F4A00274660 /* libsecp256k1-config.h in Headers */,
 				9FFB632C1DCB3ABF0095D5CA /* EtherealCereal.swift in Headers */,
+				9FFB39DF1DF8138F00274660 /* field.h in Headers */,
+				9FFB39D71DF8133F00274660 /* field_impl.h in Headers */,
+				9FFB39E31DF813E500274660 /* util.h in Headers */,
+				9FFB39FE1DF8145900274660 /* hash_impl.h in Headers */,
 				9F9030C31DD095250099861E /* keccak.h in Headers */,
+				9FFB39F61DF8144200274660 /* ecmult_const_impl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7FC6AA1DF80B990074164B /* secp256k1.c in Sources */,
 				9FD9AE411DCB36C600828D06 /* EtherealCereal.swift in Sources */,
 				9F9030AA1DD0854F0099861E /* keccak.c in Sources */,
 				9F6D5D2B1DCB71090063087D /* EtherWrapper.m in Sources */,
@@ -501,7 +637,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.EtherealCereal;
 				PRODUCT_NAME = EtherealCereal;
 				SKIP_INSTALL = YES;
-				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -536,7 +671,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.EtherealCereal;
 				PRODUCT_NAME = EtherealCereal;
 				SKIP_INSTALL = YES;
-				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_VERSION = 3.0;
 			};
