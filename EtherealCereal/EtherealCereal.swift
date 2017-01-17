@@ -69,7 +69,7 @@ public class EtherealCereal: NSObject {
         }
 
         guard result == 0 else { fatalError("Failed to randomly generate and copy bytes for private key generation. SecRandomCopyBytes error code: (\(result)).") }
-
+        
         return privateKey
     }
 
@@ -81,6 +81,10 @@ public class EtherealCereal: NSObject {
     public convenience init(privateKey: String) {
         self.init()
         self._privateKeyData = privateKey.hexadecimalData!
+    }
+
+    public override init() {
+        super.init()
     }
 }
 
@@ -98,7 +102,7 @@ public extension String {
         var byteChars: [CChar] = [0, 0, 0]
         var wholeByte: CUnsignedLong = 0
         var i = utf16.startIndex
-        while i != utf16.endIndex {
+        while i < utf16.endIndex.advanced(by: -1) {
             byteChars[0] = CChar(truncatingBitPattern: utf16[i])
             byteChars[1] = CChar(truncatingBitPattern: utf16[i.advanced(by: 1)])
             wholeByte = strtoul(byteChars, nil, 16)
