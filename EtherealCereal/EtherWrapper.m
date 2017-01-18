@@ -86,12 +86,12 @@
 - (NSData * _Nonnull)sha3:(NSUInteger)digest {
     int byteCount = (int)(digest / 8);
     const char *input = self.bytes;
-    int inputLength = (input == NULL ? 0 : (int)strlen(input));
+    int inputLength = (int)self.length;
     uint8_t output[byteCount];
 
     keccak((uint8_t *)input, inputLength, output, byteCount);
 
-    return [NSData dataWithBytes:output length:32];
+    return [NSData dataWithBytes:output length:byteCount];
 }
 
 @end
