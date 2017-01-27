@@ -74,13 +74,13 @@ public class EtherealCereal: NSObject {
     }
 
 
-    /// Returns a KECCAK-256 encoded hex-string.
+    /// Returns a KECCAK-256 encoded in base64.
     ///
     /// - Parameter string: A string to KECCAK-256 encode.
-    /// - Returns: A KECCAK-256-encoded hex-string.
+    /// - Returns: A KECCAK-256-encoded base64 encoded string.
     public func sha3(string: String) -> String {
         let data = string.data(using: .utf8)!
-        return (data as NSData).sha3(256).hexadecimalString
+        return (data as NSData).sha3(256).base64EncodedString()
     }
 
     public func sign(message: String) -> String {
