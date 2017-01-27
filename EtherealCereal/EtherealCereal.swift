@@ -73,6 +73,16 @@ public class EtherealCereal: NSObject {
         return privateKey
     }
 
+
+    /// Returns a KECCAK-256 encoded hex-string.
+    ///
+    /// - Parameter string: A string to KECCAK-256 encode.
+    /// - Returns: A KECCAK-256-encoded hex-string.
+    public func sha3(string: String) -> String {
+        let data = string.data(using: .utf8)!
+        return (data as NSData).sha3(256).hexadecimalString
+    }
+
     public func sign(message: String) -> String {
         let messageData = message.data(using: .utf8)!
         return self.ether.sign(message: messageData, with: self.privateKeyData)
