@@ -88,7 +88,8 @@ public class EtherealCereal: NSObject {
         return self.ether.sign(message: messageData, with: self.privateKeyData)
     }
 
-    public func sign(data: Data) -> String {
+    public func sign(hex: String) -> String {
+        let data = hex.replacingOccurrences(of: "0x", with: "").hexadecimalData!
         return self.ether.sign(message: data, with: self.privateKeyData)
     }
 
