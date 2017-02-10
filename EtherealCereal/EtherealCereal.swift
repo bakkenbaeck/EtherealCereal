@@ -89,7 +89,7 @@ public class EtherealCereal: NSObject {
     }
 
     public func sign(hex: String) -> String {
-        let data = hex.replacingOccurrences(of: "0x", with: "").hexadecimalData!
+        let data = hex.hexadecimalData!
         return self.ether.sign(message: data, with: self.privateKeyData)
     }
 
@@ -111,12 +111,13 @@ public extension Data {
 
 public extension String {
     public var hexadecimalData: Data? {
-        let utf16 = self.utf16
+        let utf16 = self.replacingOccurrences(of: "0x", with: "").utf16
         guard let data = NSMutableData(capacity: utf16.count/2) else { return nil }
 
         var byteChars: [CChar] = [0, 0, 0]
         var wholeByte: CUnsignedLong = 0
         var i = utf16.startIndex
+
         while i < utf16.endIndex.advanced(by: -1) {
             byteChars[0] = CChar(truncatingBitPattern: utf16[i])
             byteChars[1] = CChar(truncatingBitPattern: utf16[i.advanced(by: 1)])
