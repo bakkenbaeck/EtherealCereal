@@ -88,6 +88,10 @@ public class EtherealCereal: NSObject {
         return self.ether.sign(message: messageData, with: self.privateKeyData)
     }
 
+    public func sign(data: Data) -> String {
+        return self.ether.sign(message: data, with: self.privateKeyData)
+    }
+
     public convenience init(privateKey: String) {
         self.init()
         self._privateKeyData = privateKey.hexadecimalData!
