@@ -80,6 +80,14 @@ public class EtherealCereal: NSObject {
     /// - Returns: A KECCAK-256-encoded base64 encoded string.
     public func sha3(string: String) -> String {
         let data = string.data(using: .utf8)!
+        return self.sha3(data: data)
+    }
+
+    /// Returns a KECCAK-256 encoded in base64.
+    ///
+    /// - Parameter data: Data to be KECCAK-256 encoded.
+    /// - Returns: A KECCAK-256-encoded base64 encoded string.
+    public func sha3(data: Data) -> String {
         return (data as NSData).sha3(256).base64EncodedString()
     }
 
