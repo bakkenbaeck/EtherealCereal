@@ -118,14 +118,23 @@ public extension Data {
 }
 
 public extension String {
+
     public var hexadecimalData: Data? {
-        let str: String
-        let offset = self.index(self.startIndex, offsetBy: 2)
-        if self.substring(to: offset) == "0x" {
-            str = self.substring(from: offset)
-        } else {
-            str = self
+
+        let regex: NSRegularExpression
+        do {
+            regex = try NSRegularExpression(pattern: "^(?:0x)?([a-fA-F0-9]*)$", options: .caseInsensitive)
+        } catch {
+            fatalError("Invalid regular expression pattern")
         }
+        let matches = regex.matches(in: self, range: NSMakeRange(0, self.count))
+        if (matches.count != 1) {
+            return nil
+        }
+        guard let firstMatch = matches.first
+            else { return nil }
+        let str: String = (self as NSString).substring(with: firstMatch.rangeAt(1))
+
         let utf16: UTF16View
         if str.count % 2 == 1 {
             utf16 = "0\(str)".utf16
