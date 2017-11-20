@@ -119,7 +119,19 @@ public extension Data {
 
 public extension String {
     public var hexadecimalData: Data? {
-        let utf16 = self.replacingOccurrences(of: "0x", with: "").utf16
+        let str: String
+        let offset = self.index(self.startIndex, offsetBy: 2)
+        if self.substring(to: offset) == "0x" {
+            str = self.substring(from: offset)
+        } else {
+            str = self
+        }
+        let utf16: UTF16View
+        if str.count % 2 == 1 {
+            utf16 = "0\(str)".utf16
+        } else {
+            utf16 = str.utf16
+        }
         guard let data = NSMutableData(capacity: utf16.count/2) else { return nil }
 
         var byteChars: [CChar] = [0, 0, 0]

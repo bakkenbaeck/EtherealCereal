@@ -42,4 +42,21 @@ class Tests: XCTestCase {
         XCTAssertEqual(etherealCereal.address, expectedAddress)
     }
 
+    func testHexToData() {
+        let hexString = "0x100000000000000000000000000000000000000000000000000000000000000000"
+        let expected: [UInt8] = [16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        XCTAssertEqual(hexString.hexadecimalData!, Data(expected))
+    }
+
+    func testHexToDataOddSizeInput() {
+        let hexString = "0x10000000000000000000000000000000000000000000000000000000000000000"
+        let expected: [UInt8] = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        XCTAssertEqual(hexString.hexadecimalData!, Data(expected))
+    }
+
+    func testHexToDataWithout0x() {
+        let hexString = "102030405060708090a0b0c0d0e0f2"
+        let expected: [UInt8] = [16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 242]
+        XCTAssertEqual(hexString.hexadecimalData!, Data(expected))
+    }
 }
