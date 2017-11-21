@@ -117,22 +117,24 @@ public extension Data {
     }
 }
 
+struct AppRegex {
+    static var hexadecimalDataRegex: NSRegularExpression = {
+        return try! NSRegularExpression(pattern: "^(?:0x)?([a-fA-F0-9]*)$", options: .caseInsensitive)
+    }()
+}
+
 public extension String {
 
     public var hexadecimalData: Data? {
 
-        let regex: NSRegularExpression
-        do {
-            regex = try NSRegularExpression(pattern: "^(?:0x)?([a-fA-F0-9]*)$", options: .caseInsensitive)
-        } catch {
-            fatalError("Invalid regular expression pattern")
-        }
-        let matches = regex.matches(in: self, range: NSMakeRange(0, self.count))
-        if (matches.count != 1) {
+        let matches = AppRegex.hexadecimalDataRegex.matches(in: self, range: NSMakeRange(0, self.count))
+
+        guard matches.count == 1,
+            let firstMatch = matches.first
+        else {
             return nil
         }
-        guard let firstMatch = matches.first
-            else { return nil }
+
         let str: String = (self as NSString).substring(with: firstMatch.rangeAt(1))
 
         let utf16: UTF16View

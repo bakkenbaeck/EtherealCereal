@@ -62,8 +62,6 @@ class Tests: XCTestCase {
 
     func testBadHexData() {
         let hexString = "abcdog"
-        if let _ = hexString.hexadecimalData {
-            XCTFail("Expected Failure")
-        }
+        XCTAssertNil(hexString.hexadecimalData)
     }
 }
