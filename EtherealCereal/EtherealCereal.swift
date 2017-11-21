@@ -135,13 +135,13 @@ public extension String {
             return nil
         }
 
-        let str: String = (self as NSString).substring(with: firstMatch.rangeAt(1))
+        let hexString: String = (self as NSString).substring(with: firstMatch.rangeAt(1))
 
         let utf16: UTF16View
         if str.count % 2 == 1 {
-            utf16 = "0\(str)".utf16
+            utf16 = "0\(hexString)".utf16
         } else {
-            utf16 = str.utf16
+            utf16 = hexString.utf16
         }
         guard let data = NSMutableData(capacity: utf16.count/2) else { return nil }
 
