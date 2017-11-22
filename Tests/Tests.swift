@@ -59,4 +59,9 @@ class Tests: XCTestCase {
         let expected: [UInt8] = [16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 242]
         XCTAssertEqual(hexString.hexadecimalData!, Data(expected))
     }
+
+    func testBadHexData() {
+        let hexString = "abcdog"
+        XCTAssertNil(hexString.hexadecimalData)
+    }
 }

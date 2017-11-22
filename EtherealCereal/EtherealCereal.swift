@@ -53,7 +53,7 @@ public class EtherealCereal: NSObject {
 
 
     /// Cryptocurrencies require a very safely kept private key to sign transactions.
-    /// This is used to guarantee that the user is who they say they are. 
+    /// This is used to guarantee that the user is who they say they are.
     /// It's defined for Ethereum as a random, high-entropy 32-byte string.
     /// On iOS the safest way to create this is by using SecRandomCopyBytes() to generate it from /dev/random.
     /// For more information on the /dev/random random-number generator, see the manual page for random(4).
@@ -69,7 +69,7 @@ public class EtherealCereal: NSObject {
         }
 
         guard result == 0 else { fatalError("Failed to randomly generate and copy bytes for private key generation. SecRandomCopyBytes error code: (\(result)).") }
-        
+
         return privateKey
     }
 
@@ -117,33 +117,36 @@ public extension Data {
     }
 }
 
+struct EtherealCerealRegex {
+    static var hexadecimalDataRegex: NSRegularExpression = {
+        return try! NSRegularExpression(pattern: "^(?:0x)?([a-fA-F0-9]*)$", options: .caseInsensitive)
+    }()
+}
+
 public extension String {
     public var hexadecimalData: Data? {
-        let str: String
-        let offset = self.index(self.startIndex, offsetBy: 2)
-        if self.substring(to: offset) == "0x" {
-            str = self.substring(from: offset)
+        guard let match = EtherealCerealRegex.hexadecimalDataRegex.matches(in: self, range: NSMakeRange(0, self.count)).first
+            else { return nil }
+
+        let hexadecimalString = (self as NSString).substring(with: match.range(at: 1))
+        let utf16View: UTF16View
+        if hexadecimalString.count % 2 == 1 {
+            utf16View = "0\(hexadecimalString)".utf16
         } else {
-            str = self
+            utf16View = hexadecimalString.utf16
         }
-        let utf16: UTF16View
-        if str.count % 2 == 1 {
-            utf16 = "0\(str)".utf16
-        } else {
-            utf16 = str.utf16
-        }
-        guard let data = NSMutableData(capacity: utf16.count/2) else { return nil }
+        guard let data = NSMutableData(capacity: utf16View.count/2) else { return nil }
 
         var byteChars: [CChar] = [0, 0, 0]
         var wholeByte: CUnsignedLong = 0
-        var i = utf16.startIndex
+        var i = utf16View.startIndex
 
-        while i < utf16.endIndex.advanced(by: -1) {
-            byteChars[0] = CChar(truncatingBitPattern: utf16[i])
-            byteChars[1] = CChar(truncatingBitPattern: utf16[i.advanced(by: 1)])
+        while i < utf16View.index(before: utf16View.endIndex) {
+            byteChars[0] = CChar(truncatingIfNeeded: utf16View[i])
+            byteChars[1] = CChar(truncatingIfNeeded: utf16View[utf16View.index(after: i)])
             wholeByte = strtoul(byteChars, nil, 16)
             data.append(&wholeByte, length: 1)
-            i = i.advanced(by: 2)
+            i = utf16View.index(i, offsetBy: 2)
         }
 
         return data as Data
