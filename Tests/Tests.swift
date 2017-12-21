@@ -31,6 +31,17 @@ class Tests: XCTestCase {
         XCTAssertEqual(etherealCereal.address, expectedAddress)
     }
 
+    func testSignatureWithoutHex() {
+        let etherealCereal =  EtherealCereal(privateKey: "774681694ad86635346b6e9b92fa8aa4806265336dc6766623029a6264a162c1")
+        let signature = etherealCereal.sign(hash: "0x9dd2c369a187b4e6b9c402f030e50743e619301ea62aa4c0737d4ef7e10a3d49")
+
+        let expectedSignature = "16f89ddb9bf9ec08ff696bc766e675da7cfcb4f0b10bc8ce7c1a87a414a65a4f19c05c207e1b59f2e1cd18053cb8406fb7c6d22cec5e348d6217febbff8fc19801"
+        let expectedAddress = "0x7e7cbf2e3f7611f860d41411a8287cc86cc789f3"
+
+        XCTAssertEqual(signature, expectedSignature)
+        XCTAssertEqual(etherealCereal.address, expectedAddress)
+    }
+
     func testSignature() {
         let etherealCereal =  EtherealCereal(privateKey: "2639f727ded571d584643895d43d02a7a190f8249748a2c32200cfc12dde7173")
         let signature = etherealCereal.sign(hex: "0xe5808504a817c80082520894f59fc5a335e75060ff18beed2d6c8fbbbdab0dc2843b9aca0080")
