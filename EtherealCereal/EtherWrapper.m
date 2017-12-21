@@ -38,11 +38,12 @@
     return publicKeyData;
 }
 
-- (NSString * _Nonnull)signMessage:(NSData * _Nonnull)message withKey:(NSData * _Nonnull)privateKey {
+- (NSString * _Nonnull)signMessage:(NSData * _Nonnull)message withKey:(NSData * _Nonnull)privateKey withHashing:(BOOL)withHashing {
     secp256k1_ecdsa_recoverable_signature signature;
     unsigned char signature_serialised[64];
 
-    const unsigned char *msg = [message sha3:256].bytes;
+    const unsigned char *msg = withHashing ? [message sha3:256].bytes : message.bytes;
+
     const unsigned char *private_key = privateKey.bytes;
     int recid = 0;
     const secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);

@@ -44,9 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param message The message or transaction to be signed.
  @param privateKey The raw data private key from the user. Should be kept safe at all costs.
+ @param withHashing Whether sha3 should be called on the message
  @return A 130 character hexadecimal string. This is the signature for a given message. If you have this and the original message, you can recover an address. Use it to guaratee the message originator.
  */
-- (NSString *)signMessage:(NSData *)message withKey:(NSData *)privateKey NS_SWIFT_NAME(sign(message:with:));
+- (NSString *)signMessage:(NSData *)message withKey:(NSData * _Nonnull)privateKey withHashing:(BOOL)withHashing NS_SWIFT_NAME(sign(message:with:withHashing:));
 
 @end
 

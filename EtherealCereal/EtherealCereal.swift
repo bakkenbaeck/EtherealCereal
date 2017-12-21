@@ -93,12 +93,17 @@ public class EtherealCereal: NSObject {
 
     public func sign(message: String) -> String {
         let messageData = message.data(using: .utf8)!
-        return self.ether.sign(message: messageData, with: self.privateKeyData)
+        return self.ether.sign(message: messageData, with: self.privateKeyData, withHashing: true)
     }
 
     public func sign(hex: String) -> String {
         let data = hex.hexadecimalData!
-        return self.ether.sign(message: data, with: self.privateKeyData)
+        return self.ether.sign(message: data, with: self.privateKeyData, withHashing: true)
+    }
+
+    public func sign(hash: String) -> String {
+        let data = hash.hexadecimalData!
+        return self.ether.sign(message: data, with: self.privateKeyData, withHashing: false)
     }
 
     public convenience init(privateKey: String) {
