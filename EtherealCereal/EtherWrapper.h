@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param withHashing Whether sha3 should be called on the message
  @return A 130 character hexadecimal string. This is the signature for a given message. If you have this and the original message, you can recover an address. Use it to guaratee the message originator.
  */
-- (NSString * _Nonnull)signMessage:(NSData * _Nonnull)message withKey:(NSData * _Nonnull)privateKey withHashing:(BOOL)withHashing NS_SWIFT_NAME(sign(message:with:withHashing:));
+- (NSString *)signMessage:(NSData *)message withKey:(NSData * _Nonnull)privateKey withHashing:(BOOL)withHashing NS_SWIFT_NAME(sign(message:with:withHashing:));
 
 @end
 
