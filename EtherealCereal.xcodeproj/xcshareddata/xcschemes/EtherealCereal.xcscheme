@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9FD9AE2C1DCB364A00828D06"
-               BuildableName = "Demo.app"
-               BlueprintName = "Demo"
+               BlueprintIdentifier = "9F800C011DCB34D700C37B7A"
+               BuildableName = "EtherealCereal.framework"
+               BlueprintName = "Framework-iOS"
                ReferencedContainer = "container:EtherealCereal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,16 +26,25 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9F9030B01DD0928A0099861E"
+               BuildableName = "Tests.xctest"
+               BlueprintName = "Tests"
+               ReferencedContainer = "container:EtherealCereal.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FD9AE2C1DCB364A00828D06"
-            BuildableName = "Demo.app"
-            BlueprintName = "Demo"
+            BlueprintIdentifier = "9F800C011DCB34D700C37B7A"
+            BuildableName = "EtherealCereal.framework"
+            BlueprintName = "Framework-iOS"
             ReferencedContainer = "container:EtherealCereal.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -46,23 +55,21 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FD9AE2C1DCB364A00828D06"
-            BuildableName = "Demo.app"
-            BlueprintName = "Demo"
+            BlueprintIdentifier = "9F800C011DCB34D700C37B7A"
+            BuildableName = "EtherealCereal.framework"
+            BlueprintName = "Framework-iOS"
             ReferencedContainer = "container:EtherealCereal.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9FD9AE2C1DCB364A00828D06"
-            BuildableName = "Demo.app"
-            BlueprintName = "Demo"
+            BlueprintIdentifier = "9F800C011DCB34D700C37B7A"
+            BuildableName = "EtherealCereal.framework"
+            BlueprintName = "Framework-iOS"
             ReferencedContainer = "container:EtherealCereal.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
