@@ -21,7 +21,7 @@
 
     secp256k1_pubkey public_key;
 
-    const secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
+    secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
 
     BOOL valid = ((int)secp256k1_ec_seckey_verify(ctx, private_key) == (int)1);
 
@@ -35,6 +35,8 @@
 
     NSData *publicKeyData = [[NSData dataWithBytes:public_key_serialized length:public_key_length] subdataWithRange:NSMakeRange(1, public_key_length - 1)];
 
+    secp256k1_context_destroy(ctx);
+
     return publicKeyData;
 }
 
@@ -46,7 +48,7 @@
 
     const unsigned char *private_key = privateKey.bytes;
     int recid = 0;
-    const secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
+    secp256k1_context *ctx = secp256k1_context_create(SECP256K1_CONTEXT_SIGN | SECP256K1_CONTEXT_VERIFY);
 
     secp256k1_ecdsa_sign_recoverable(ctx, &signature, msg, private_key, NULL, NULL);
     secp256k1_ecdsa_recoverable_signature_serialize_compact(ctx, signature_serialised, &recid, &signature);
@@ -59,6 +61,8 @@
 
     NSData *signatureData = [NSData dataWithBytes:&signature_serialised_with_recid length:65];
     NSString *signatureString = [signatureData hexadecimalString];
+
+    secp256k1_context_destroy(ctx);
 
     return signatureString;
 }

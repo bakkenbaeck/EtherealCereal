@@ -61,14 +61,14 @@ class ViewController: UIViewController {
         print("Public key generated: \(self.etherealCereal.publicKey)")
         print("Address: \(self.etherealCereal.address)")
 
-        let privateKeyString = NSMutableAttributedString(string: "Private key: \(self.etherealCereal.privateKey)", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)])
-        privateKeyString.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFont(ofSize: 16), range: (privateKeyString.string as NSString).range(of: "Private key:"))
+        let privateKeyString = NSMutableAttributedString(string: "Private key: \(self.etherealCereal.privateKey)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16)])
+        privateKeyString.addAttribute(NSAttributedStringKey.font, value: UIFont.boldSystemFont(ofSize: 16), range: (privateKeyString.string as NSString).range(of: "Private key:"))
 
-        let publicKeyString = NSMutableAttributedString(string: "Public key: \(self.etherealCereal.publicKey)", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)])
-        publicKeyString.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFont(ofSize: 16), range: (publicKeyString.string as NSString).range(of: "Public key:"))
+        let publicKeyString = NSMutableAttributedString(string: "Public key: \(self.etherealCereal.publicKey)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16)])
+        publicKeyString.addAttribute(NSAttributedStringKey.font, value: UIFont.boldSystemFont(ofSize: 16), range: (publicKeyString.string as NSString).range(of: "Public key:"))
 
-        let addressString = NSMutableAttributedString(string: "Address: \(self.etherealCereal.address)", attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 16)])
-        addressString.addAttribute(NSFontAttributeName, value: UIFont.boldSystemFont(ofSize: 16), range: (addressString.string as NSString).range(of: "Address:"))
+        let addressString = NSMutableAttributedString(string: "Address: \(self.etherealCereal.address)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16)])
+        addressString.addAttribute(NSAttributedStringKey.font, value: UIFont.boldSystemFont(ofSize: 16), range: (addressString.string as NSString).range(of: "Address:"))
 
         self.privateKeyLabel.attributedText = privateKeyString
         self.publicKeyLabel.attributedText = publicKeyString

@@ -328,9 +328,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9F800C011DCB34D700C37B7A /* Framework-iOS */ = {
+		9F800C011DCB34D700C37B7A /* EtherealCereal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F800C161DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "Framework-iOS" */;
+			buildConfigurationList = 9F800C161DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "EtherealCereal" */;
 			buildPhases = (
 				9F800BFD1DCB34D700C37B7A /* Sources */,
 				9F800BFE1DCB34D700C37B7A /* Frameworks */,
@@ -341,7 +341,7 @@
 			);
 			dependencies = (
 			);
-			name = "Framework-iOS";
+			name = EtherealCereal;
 			productName = EtherealCereal;
 			productReference = 9F800C021DCB34D700C37B7A /* EtherealCereal.framework */;
 			productType = "com.apple.product-type.framework";
@@ -389,25 +389,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Bakken & Bæck";
 				TargetAttributes = {
 					9F800C011DCB34D700C37B7A = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 29X3GG489T;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					9F9030B01DD0928A0099861E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 29X3GG489T;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					9FD9AE2C1DCB364A00828D06 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 29X3GG489T;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -425,7 +425,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F800C011DCB34D700C37B7A /* Framework-iOS */,
+				9F800C011DCB34D700C37B7A /* EtherealCereal */,
 				9FD9AE2C1DCB364A00828D06 /* Demo */,
 				9F9030B01DD0928A0099861E /* Tests */,
 			);
@@ -494,7 +494,7 @@
 /* Begin PBXTargetDependency section */
 		9F9030B81DD0928A0099861E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9F800C011DCB34D700C37B7A /* Framework-iOS */;
+			target = 9F800C011DCB34D700C37B7A /* EtherealCereal */;
 			targetProxy = 9F9030B71DD0928A0099861E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -524,6 +524,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -531,6 +532,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -584,6 +586,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -591,6 +594,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -655,7 +659,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -690,7 +693,6 @@
 				PRODUCT_NAME = EtherealCereal;
 				SKIP_INSTALL = YES;
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -709,7 +711,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -728,7 +729,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -753,7 +753,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -776,7 +776,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -792,7 +792,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F800C161DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "Framework-iOS" */ = {
+		9F800C161DCB34D700C37B7A /* Build configuration list for PBXNativeTarget "EtherealCereal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F800C171DCB34D700C37B7A /* Debug */,
