@@ -263,7 +263,7 @@
 				9FFB3A041DF8146F00274660 /* eckey_impl.h */,
 				9FFB3A051DF8146F00274660 /* eckey.h */,
 			);
-			name = Vendor;
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		9FFB3A081DF8148600274660 /* modules */ = {
